@@ -1,24 +1,215 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
 :root{
 	--black: #000;
 	--white: #fff;
 	--muddy-brown: #b48f5b;
-    --alice-blue: var(--alice-blue);
+    --alice-blue: #f0f8ff;
     --azure: azure;
-    --antique-white: var(--antique-white);
-    --blanched-almond: var(--blanched-almond);
+    --antique-white: #faebd7;
+    --blanched-almond: #ffebcd;
 
 	--fonts: Inter, Monsterrat, sans-serif;
 }
-#skip{
+html {
+	font-family: var(--fonts);
+}
+#skip {
+  position: absolute;
+  left: 50%;
+  transform: translateY(-100px);
+}
+#skip:focus {
+  transform: translateY(50px);
+  transition: 0.3s;
+  padding: 20px;
+  background-color: #f33;
+  color: #ffffff;
+}
+header {
+	background-color: var(--alice-blue);
+	height: 100px;
+}
+header img {
+	height: 140px;
+    margin-left: 40px;
+	position: relative;
+	top: -17px;
+}
+nav {
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
 	position: absolute;
-	left: -10000px;
-	top: auto;
-	width: 1px;
-	height: 1px;
-	overflow: hidden;
+    top: 30px;
+    left: 210px;
 }
-#skip:focus{
-	position: static;
-	width: auto;
-	height: auto;
+nav a {
+	text-decoration: none;
 }
+nav ul {
+	display:grid;
+	grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;
+	flex-direction: row;
+}
+nav li {
+	width:164px;
+	color: #1A1A1A;
+	display: block;
+	padding: 1rem;
+	padding-right: 0;
+	position: relative;
+	text-decoration: none;
+	transition-duration: 0.5s;
+  }
+  nav li a {
+	color: #1A1A1A;
+  }
+  nav li:hover, nav li:focus-within {
+	background-color: var(--muddy-brown);
+	cursor: pointer;
+  }
+  nav li:focus-within a {
+	outline: none;
+  }
+  nav ul li ul {
+	background-color: var(--antique-white);
+	visibility: hidden;
+	opacity: 0;
+	width: 180px;
+	position: absolute;
+	margin-top: 1rem;
+	left: 0;
+	display: none;
+	transition: all 0.5s ease-in;
+  }
+  ul li:hover > ul, ul li:focus-within > ul, ul li ul:hover, ul li ul:focus {
+	visibility: visible;
+	opacity: 1;
+	display: block;
+  }
+  nav div {
+	display: flex;
+	column-gap: 35px;
+	width: 250px;
+    position: absolute;
+    right: -250px;
+	top: 16px;
+  }
+  div img {
+	position: absolute;
+    right: 69px;
+    height: 25px;
+    top: -6px;
+  }div img:last-child {
+	right: 0;
+  }
+  div a {
+	color: #000;
+  }
+  main{
+	width: 950px;
+	margin-left: auto;
+	margin-right: auto;
+  }
+  body {
+	background-color: var(--azure);
+  }
+  h1 {
+	font-family: var(mo);
+    font-size: 3em;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  section ul {
+	list-style: circle;
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+  }
+  section ul li {
+	padding: 0.3em;
+	width: fit-content;
+  }
+  section ul li a {
+	text-decoration: none;
+	color: #000;
+  }
+  section ul li:hover {
+	font-weight: bolder;
+  }
+  .warning {
+	font-weight: bolder;
+  }
+  .warning p{
+	margin-top: 10px;
+  }
+  table {
+	margin-top: 25px;
+	margin-bottom: 40px;
+  }
+  th {
+    padding: 1em;
+	padding-right: 50px;
+	padding-left: 50px;
+	background-color: var(--muddy-brown);
+  }
+  th:first-of-type {
+	width: 100px;
+  }
+  th:nth-child(2) {
+	width: 200px;
+  }
+  th:nth-child(3) {
+	width: 200px;
+  }
+  .table {
+	width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  td {
+	text-align: center;
+  }
