@@ -26,7 +26,7 @@
         <link href="styles.css" rel="stylesheet">
     </head>
     <body>
-        <a id="skip" href="#main-content">Skip to Main Content</a>
+        <a id="skip" href="#main">Skip to Main Content</a>
         <header>
             <a href="index.html" id="logo">
                 <picture>
@@ -97,9 +97,7 @@
                     <li><a href="#">Guide</a>
                         <ul>
                           <li><a href="#">Skinsights</a></li>
-                          <li><a href="#">COSRX Affiliate Club</a></li>
                           <li><a href="#">Take the Quiz</a></li>
-                          <li><a href="#">Stores</a></li>
                           <li><a href="#">FAQs</a></li>
                         </ul>
                     </li>
@@ -110,22 +108,22 @@
                   <a href="#">Search</a>
                   <img src = "images/magnifying-glass.svg" alt="search svg"/>
                   <a href="#">Cart</a>
-                  <img src = "images/shopping-cart.svg" alt="shopping svg"/>
+                  <img src="images/shopping-cart.svg" alt="shopping svg"/>
                 </div>
             </nav>
         </header>
-        <main>
+        <main id="main">
           <section>
             <h1>Stores</h1>
             <p>Official brand mall run by COSRX headquarter. Authorized sellers are COSRX's partner distributors which you can purchase authentic products from.</p>
-            <ul>
-              <li><a href="#">International</a></li>
-              <li><a href="#">America</a></li>
-              <li><a href="#">Europe</a></li>
-              <li><a href="#">Asia</a></li>
-              <li><a href="#">Africa</a></li>
-              <li><a href="#">Oceania</a></li>
-              <li><a href="#">CIS</a></li>
+            <ul class="shortcut">
+              <li><a href="#inter">International</a></li>
+              <li><a href="#amer">America</a></li>
+              <li><a href="#euro">Europe</a></li>
+              <li><a href="#asi">Asia</a></li>
+              <li><a href="#afri">Africa</a></li>
+              <li><a href="#oce">Oceania</a></li>
+              <li><a href="#cis">CIS</a></li>
             </ul>
           </section>
           <section class="warning">
@@ -138,399 +136,426 @@
           <section class="table">
             <table>
               <tr>
-              <th>Country</th>
+              <th id="inter">Country</th>
               <th>Official Mall</th>
               <th>Authorized Seller</th>
               </tr>
+              <h2 id="international">| International |</h2>
               <tr>
-              <td>International</td>
+              <td class="beige" id="amer">International</td>
               <td></td>
               <td>Jolse, Yesstyle, StyleKorean, iHerb, Wishtrend, Aaron Trade, OLIVE YOUNG Global</td>
               </tr>
+              <h2 id="america">| America |</h2>
               <tr>
-              <td>USA</td>
+              <td class="bisque">USA</td>
               <td>Amazon, TikTok, Walmart</td>
               <td>ULTA, ULTA @ Target, JCPenney, Urban Outfitters, Revolve, ASOS, Dermstore, COSTCO, Forever 21, TJ Maxx, Marshalls, SOKO GLAM, CUPIDROP, Macy's, Verishop, Aerie, Nordstrom, Nordstrom Rack</td>
               </tr>
               <tr>
-              <td>Canada</td>
+              <td class="bisque">Canada</td>
               <td></td>
               <td>TNT, Unique Bunny, Socialite Beauty, C&C, Kiokii and…, Healthy Planet, KISEKI</td>
               </tr>
               <tr>              
-              <td>Brazil</td>
+              <td class="bisque">Brazil</td>
               <td>Shopee</td>
               <td></td>
               </tr>
               <tr>
-              <td>Mexico</td>
+              <td class="bisque">Mexico</td>
               <td></td>
               <td>Farmacias del Ahorro, Nuestro Secreto, Need Beauty</td>
               </tr>
               <tr>
-              <td>Uruguay</td>
+              <td class="bisque">Uruguay</td>
               <td></td>
               <td>Hortensia</td>
-              </tr>              
-              <td>Chile</td>
+              </tr>
+              <tr>              
+              <td class="bisque">Chile</td>
               <td></td>
               <td>DBS, Sokobox</td>
               </tr>
               <tr>
-              <td>Colombia</td>
+              <td class="bisque">Colombia</td>
               <td></td>
               <td>Cromantic, Locatel, Kirka</td>
               </tr>
               <tr>
-              <td>Ecuador</td>
+              <td class="bisque">Ecuador</td>
               <td></td>
               <td>Dipaso, Dermashop, Deprati</td>
-              </tr>              
-              <td>Panama</td>
+              </tr>
+              <tr>              
+              <td class="bisque">Panama</td>
               <td></td>
               <td>Mumuso</td>
               </tr>
               <tr>
-              <td>Jamaica	</td>
+              <td class="bisque" id="euro">Jamaica	</td>
               <td></td>
               <td>Fontana Pharmacy</td>
               </tr>
+              <h2 id="europe">| Europe |</h2>
               <tr>
-              <td>Albania	</td>
+              <td class="beige">Albania	</td>
               <td></td>
               <td>NutriFamaci</td>
-              </tr>              
-              <td>Austria</td>
+              </tr>
+              <tr>             
+              <td class="beige">Austria</td>
               <td></td>
               <td>Miin Cosmetic, Lyko</td>
               </tr>
               <tr>
-              <td>Belgium</td>
+              <td class="beige">Belgium</td>
               <td></td>
               <td>Miin Cosmetic, Boozyshop, Glow Station</td>
               </tr>
               <tr>
-              <td>Bulgaria	</td>
+              <td class="beige">Bulgaria	</td>
               <td></td>
               <td>Miin Cosmetic, Glow Station</td>
-              </tr>              
-              <td>Croatia</td>
+              </tr>
+              <tr>              
+              <td class="beige">Croatia</td>
               <td></td>
               <td>Beauty GARDEN</td>
               </tr>
               <tr>
-              <td>Czech Republic</td>
+              <td class="beige">Czech Republic</td>
               <td></td>
               <td>Miin Cosmetic, Glow Station</td>
               </tr>
               <tr>
-              <td>Denmark	</td>
+              <td class="beige">Denmark	</td>
               <td></td>
               <td>DermaSpace, Magasin Du Nord, H&M.dk, Matas, Lyko</td>
-              </tr>              
-              <td>Finland</td>
+              </tr> 
+              <tr>             
+              <td class="beige">Finland</td>
               <td></td>
               <td>Bearel, Lyko, Bangerhead, Eleven, Nordic Feel, Sokos, Yliopiston Apteekki, Stockman</td>
               </tr>
               <tr>
-              <td>France</td>
+              <td class="beige">France</td>
               <td>Amazon</td>
               <td>Miin Cosmetic, Boozyshop, Glow Station, Galeries Lafayette, Coree</td>
               </tr>
               <tr>
-              <td>Germany	</td>
+              <td class="beige">Germany	</td>
               <td>Amazon</td>
               <td>Love my Cosmetic, DM, Douglas, Flaconi, H&M.de, Notino, Miin Cosmetic, Lyko, Boozyshop, Glow Station, Müller</td>
-              </tr>              
-              <td>Greece</td>
+              </tr> 
+              <tr>             
+              <td class="beige">Greece</td>
               <td></td>
               <td>elbeauty, Miin Cosmetic, Galerie De Beauté </td>
               </tr>
               <tr>
-              <td>Hungary</td>
+              <td class="beige">Hungary</td>
               <td></td>
               <td>BBKREM</td>
               </tr>
               <tr>
-              <td>Iceland</td>
+              <td class="beige">Iceland</td>
               <td></td>
               <td>LYFJA, KRONAN, Heilsuhusid, HAGKAUP</td>
-              </tr>              
-              <td>Italy</td>
+              </tr> 
+              <tr>             
+              <td class="beige">Italy</td>
               <td>Amazon</td>
               <td>Miin Cosmetic, DM, Miloon, Glow Station, Marionnaud</td>
               </tr>
               <tr>
-              <td>Lithuania</td>
+              <td class="beige">Lithuania</td>
               <td></td>
               <td>Drogas, Azijosnamai, Naujaod, Skin Derma</td>
               </tr>
               <tr>
-              <td>Luxembourg</td>
+              <td class="beige">Luxembourg</td>
               <td></td>
               <td>Miin Cosmetic</td>
               </tr>
               <tr>
-              <td>Netherlands</td>
+              <td class="beige">Netherlands</td>
               <td></td>
-              <td>Cell</td>
+              <td>Little Wonderland, Miin Cosmetic, Lyko, Boozyshop</td>
               </tr>
               <tr>
-              <td>Cell</td>
+              <td class="beige">Norway</td>
               <td></td>
-              <td>Cell</td>
+              <td>Blivakker & Cocopanda, Coverbrands, Fredrik&Louisa, Farmasiet, Skin Secret, Vita , Apotek1, Apotera, Sincere, Lyko</td>
               </tr>
               <tr>
-              <td>Cell</td>
+              <td class="beige">Portugal</td>
               <td></td>
-              <td>Cell</td>
+              <td>Miin Cosmetic</td>
               </tr>
               <tr>              
-              <td>Cell</td>
+              <td class="beige">Poland</td>
               <td></td>
-              <td>Cell</td>
+              <td>	Cosibella, Skinsider, Lyko, HEBE, Super Pharm, Glow Station</td>
               </tr>
               <tr>
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
+              <td class="beige">Romania</td>
+              <td></td>
+              <td>Aqua Publis</td>
               </tr>
               <tr>
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
-              </tr>              
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
-              </tr>
-              <tr>
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
-              </tr>
-              <tr>
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
-              </tr>              
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
-              </tr>
-              <tr>
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
-              </tr>
-              <tr>
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
-              </tr>              
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
-              </tr>
-              <tr>
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
-              </tr>
-              <tr>
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
-              </tr>              
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
-              </tr>
-              <tr>
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
-              </tr>
-              <tr>
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
-              </tr>              
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
-              </tr>
-              <tr>
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
-              </tr>
-              <tr>
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
-              </tr>              
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
-              </tr>
-              <tr>
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
-              </tr>
-              <tr>
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
-              </tr>              
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
-              </tr>
-              <tr>
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
-              </tr>
-              <tr>
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
-              </tr>              
-              <tr>
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
-              </tr>
-              <tr>
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
-              </tr>
-              <tr>
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
+              <td class="beige">Spain</td>
+              <td>Amazon</td>
+              <td>Miin Cosmetic</td>
               </tr>
               <tr>              
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
+              <td class="beige">Sweden</td>
+              <td></td>
+              <td>	GLOWid, Apohem, Apotek Hjartat, H&M.se, Hudoteket, Kicks, Kronans Apotek, Meds, Seth and Sally, Lyko, Eleven</td>
               </tr>
               <tr>
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
+              <td class="beige">Switzerland</td>
+              <td></td>
+              <td>Niasha, Miin Cosmetic, Glow Station, Coree</td>
               </tr>
               <tr>
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
+              <td class="beige" id="asi">United Kingdom</td>
+              <td>Amazon, TikTok</td>
+              <td>Feel Unique, Boots Pharmacy, Look Fantastic, Beauty Bay, Beauty Expert, Lloyds Pharmacy, Cult Beauty, ASOS, Superdrug, Skinsider, ESCENTUAL, JUSTMYLOOK, SEPHORA, Skin2Seoul</td>
+              <h2 id="asia">| Asia |</h2>
+              </tr>  
+              <tr>            
+              <td class="bisque">Bahrain</td>
+              <td></td>
+              <td>Soko Store</td>
+              </tr>
+              <tr>
+              <td class="bisque">Bangladesh</td>
+              <td></td>
+              <td>Belaface, RUPCHORCHA</td>
+              </tr>
+              <tr>
+              <td class="bisque">Bhutan</td>
+              <td></td>
+              <td>Ngori</td>
+              </tr>
+              <tr>              
+              <td class="bisque">Cambodia</td>
+              <td></td>
+              <td>Goody Shop</td>
+              </tr>
+              <tr>
+              <td class="bisque">China</td>
+              <td>Tmall Global, Redbook, VIP.COM, Tiktok</td>
+              <td></td>
+              </tr>
+              <tr>
+              <td class="bisque">Hongkong</td>
+              <td></td>
+              <td>Watsons HK</td>
+              </tr>  
+              <tr>            
+              <td class="bisque">India</td>
+              <td></td>
+              <td>Limese, Nykaa, Purplle, Beauty barn, Foxy, Blinkit, kindlife, sublime life, Maccaron</td>
+              </tr>
+              <tr>
+              <td class="bisque">Indonesia</td>
+              <td></td>
+              <td>Sociolla, Shopee, COSRX ID, Watsons, Guardian, Boots, Tokopedia</td>
+              </tr>
+              <tr>
+              <td class="bisque">Iraq</td>
+              <td></td>
+              <td>Synergy Global, Beauty Beacon Company, ALSHAHEERA, Halazoon, Vanilla Cosmetics & Perfumes</td>
+              </tr> 
+              <tr>             
+              <td class="bisque">Japan	</td>
+              <td>Qoo10, Rakuten</td>
+              <td></td>
+              </tr>
+              <tr>
+              <td class="bisque">Kuwait</td>
+              <td></td>
+              <td>Wafi Cosmetics</td>
+              </tr>
+              <tr>
+              <td class="bisque">Malaysia</td>
+              <td>Shopee, TikTok</td>
+              <td>Lazada, Hermo, Watsons, Shopee, Glampick </td>
+              </tr>   
+              <tr>           
+              <td class="bisque">Mongolia</td>
+              <td></td>
+              <td>Zaya Bilgee</td>
+              </tr>
+              <tr>
+              <td class="bisque">Myanmar</td>
+              <td></td>
+              <td>Libra, Beauty and me</td>
+              </tr>
+              <tr>
+              <td class="bisque">Nepal</td>
+              <td></td>
+              <td>Prettyclick, Bhat-Bhateni Supermarket & Departmental, Store</td>
+              </tr> 
+              <tr>             
+              <td class="bisque">Pakistan</td>
+              <td></td>
+              <td>Beauty Glance, TheSkinFit</td>
+              </tr>
+              <tr>
+              <td class="bisque">Philippines</td>
+              <td>Shopee, Tiktok</td>
+              <td>Watsons, Shopee, LOOK, Lazada, Skincare Curator, Chimes, Zalora, Commalax</td>
+              </tr>
+              <tr>
+              <td class="bisque">Saudi Arabia</td>
+              <td></td>
+              <td>Cozmx, Al NAHDI, Orange Pharmacy, Faces, whites</td>
               </tr>              
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
+              <tr>
+              <td class="bisque">Sri Lanka</td>
+              <td></td>
+              <td>Elysium Global, Daraz</td>
               </tr>
               <tr>
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
+              <td class="bisque">Singapore</td>
+              <td>Shopee</td>
+              <td>Watsons, Zalora, Lazada, Tik Tok Shop, Shopee Flagship Store</td>
               </tr>
               <tr>
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
-              </tr>              
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
+              <td class="bisque">Taiwan</td>
+              <td>Shopee</td>
+              <td>Shopee Official Distributor, Watsons TW, Tal Yah, MOMO</td>
+              </tr>
+              <tr>              
+              <td class="bisque">Thailand</td>
+              <td>Shopee, TikTok</td>
+              <td>Konvy, Lazada, Shopee, Beautrium, All about you</td>
               </tr>
               <tr>
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
+              <td class="bisque">Turkey</td>
+              <td></td>
+              <td>Bella Professional Group, trendyol, Glow Station</td>
               </tr>
               <tr>
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
-              </tr>              
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
+              <td class="bisque">UAE</td>
+              <td></td>
+              <td>K-secret, Beauty Milano, Namshi, Faces, Boots, Nessa, Watsons UAE, LAMISE BEAUTY, Aster Pharmacy</td>
+              </tr>
+              <tr>              
+              <td class="bisque">Vietnam</td>
+              <td>Shopee, TikTok</td>
+              <td>Beauty Box, Watsons, Guardian, tiki, Lazada, Mint cosmetic, Ab beauty, Bellalab, Pharmacity, Hasaki, Sociolla, Sammishop </td>
               </tr>
               <tr>
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
+              <td class="bisque">Lebanon</td>
+              <td></td>
+              <td>HBYTALA</td>
               </tr>
               <tr>
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
-              </tr>              
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
+              <td class="bisque" id="afri">Qatar</td>
+              <td></td>
+              <td>Myriad</td>
+              </tr>
+              <h2 id="africa">| Africa |</h2>
+              <tr>              
+              <td class="beige">Ghana</td>
+              <td></td>
+              <td>Beauty Hut</td>
               </tr>
               <tr>
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
+              <td class="beige">Kenya</td>
+              <td></td>
+              <td>ChokChok_Hada, Jumia, Kbeautykenya, Aboosto Cosmetics</td>
               </tr>
               <tr>
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
-              </tr>              
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
+              <td class="beige">Somalia</td>
+              <td></td>
+              <td>Aboosto Cosmetics</td>
+              </tr>  
+              <tr>            
+              <td class="beige">South Africa</td>
+              <td></td>
+              <td>BeautiqueSA, Takealot, Superbalist, We are EGG, Beauty ON Tapp, Life Day Spa</td>
               </tr>
               <tr>
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
+              <td class="beige">Mauritius</td>
+              <td></td>
+              <td>Glowtime</td>
               </tr>
               <tr>
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
-              </tr>              
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
+              <td class="beige">Nigeria</td>
+              <td></td>
+              <td>Buybetter, Nectar Beauty, KONA BIOSCIENCES LIMITED</td>
+              </tr>    
+              <tr>          
+              <td class="beige">Libya</td>
+              <td></td>
+              <td>Aurelia Beauty</td>
               </tr>
               <tr>
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
+              <td class="beige" id="oce">Egypt</td>
+              <td></td>
+              <td>KoreaShopABC NGV SEA</td>
+              </tr>
+              <h2 id="oceania">| Oceania |</h2>
+              <tr>
+              <td class="bisque" id="cis">Australia</td>
+              <td></td>
+              <td>Boniik, Adore Beauty, Makeup2beauty</td>
+              </tr>
+              <h2 id="cis">| CIS |</h2>  
+              <tr>            
+              <td class="beige">Russia</td>
+              <td></td>
+              <td>Gold Apple, Rive Gauch, Ozon, Wildberries, Letoile</td>
               </tr>
               <tr>
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
-              </tr>              
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
-              </tr>
-              <tr>
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
-              </tr>
-              <tr>
-              <td>Cell</td>
-              <td>Cell</td>
-              <td>Cell</td>
+              <td class="beige">Kazakhstan</td>
+              <td></td>
+              <td>Gold Apple</td>
               </tr>
             </table>
           </section>
         </main>
     </body>
     <footer>
-      
+      <section>
+        <h3>Contact Us</h3>
+        <a href="mailto:global@cosrx.co.kr">global@cosrx.co.kr (Customer Service)</a>
+        <a href="mailto:global@cosrx.co.kr">global@cosrx.co.kr (US Adverse Event)</a>
+        <a href="mailto:selltogether@cosrx.co.kr">selltogether@cosrx.co.kr (Wholesale)</a>
+        <p>Monday - Friday</p>
+        <p>10:am - 5:00pm <a href="https://howlonghowmany.com/my-time/korea-standard-time/">KST</a></p>
+      </section>
+      <section>
+        <h3>Help</h3>
+        <ul>
+          <li><a href="#">Official COSRX</a></li>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Shipping Policy</a></li>
+          <li><a href="#">Return Policy</a></li>
+        </ul>
+      </section>
+      <section>
+        <h3>Shop</h3>
+        <ul>
+          <li><a href="#">Shop by Country</a></li>
+          <li><a href="#">COSRX Affiliate Club</a></li>
+          <li><a href="#">Reviews</a></li>
+        </ul>
+      </section>
+      <section>
+        <h3>Newsletter</h3>
+        <p>Sign up for exclusive skincare tips, customized product suggestions & exclusive discounts!</p>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email">
+        <button type="button">Subscribe!</button>
+      </section>
+      <span>© 2025 COSRX Unofficial. Angel Garcia, GIT480</span>
     </footer>
 </html>
