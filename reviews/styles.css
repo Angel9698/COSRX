@@ -137,7 +137,7 @@ nav li {
     right: -250px;
 	top: 16px;
   }
-  div img {
+  header div img {
 	position: absolute;
     right: 69px;
     height: 25px;
@@ -162,13 +162,12 @@ nav li {
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 35px;
   }
   section ul {
     margin-top: 20px;
-    margin-left: 30px;
-    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 28%;
   }
   section ul li {
 	padding: 0.3em;
@@ -178,24 +177,30 @@ nav li {
 	text-decoration: none;
 	color: #000;
   }
-  main img {
-    height: 35px;
-    position: absolute;
-    top: 157px;
-    left: 555px;
+  .main-rating {
+    height: 20px;
+    position: relative;
+    top: 245px;
+    left: 20px;
   }
   .number {
-    font-size: 1.5em;
+    font-size: 0.9em;
     font-weight: 500;
     color: var(--dark-gray);
-    position: absolute;
-    top: 169px;
-    left: 943px;
-  }
+    position: relative;
+    top: 145px;
+    left: 130px;
+}
   .testimonials div {
-    padding-top: 30px;
+    padding-top: 15px;
     padding-bottom: 30px;
     border-bottom: 1px solid;
+  }
+  .testimonials div:first-of-type {
+    border-top: 1px solid;
+  }
+  .testimonials div:last-of-type {
+    margin-bottom: 50px;
   }
   .testimonials {
     margin-top: 175px;
@@ -204,77 +209,84 @@ nav li {
     font-weight: 600;
     font-size: 1.1em;
     padding: 1em;
+    display: inline-flex;
+    width: 100px;
   }
   .product {
-    color: rgba(96,96,120,85%);
+    color: rgba(96, 96, 120, 85%);
     position: relative;
     left: -80px;
+    display: inline-flex;
+    width: 450px;
   }
   .date {
     font-size: 0.85em;
     color: rgba(96, 96, 120, 85%);
     padding: 1em;
-    margin-left: 300px;
   }
   .testimonials div img {
     height: 20px;
     position: relative;
     top: 35px;
-    left: -96px;
+    left: -121px;
   }
   .testimonials div img.product-image {
-    height: 150px;
-    position: absolute;
-    top: 397px;
-    left: 225px;
+    height: 170px;
+    float: inline-start;
+    left: -30px;
+  }
+  .product-image:first-of-type {
+    top: 5px;
   }
   #image2 {
-    top: 783px;
+    top: 5px;
   }
   #image3 {
-    top: 976px;
+    top: 5px;
   }
   #image4 {
-    top: 1169px;
+    top: 5px;
   }
   #image5 {
-    top: 1362px;
+    top: 5px;
   }
   #image6 {
-    top: 1555px;
+    top: 5px;
   }
   #image7 {
-    top: 590px;
+    top: 5px;
   }
   #image8 {
-    top: 1748px;
+    top: 5px;
   }
   #image9 {
-    top: 1941px;
+    top: 5px;
   }
   #image10 {
-    top: 2134px;
+    top: 5px;
   }
   .title {
     display: block;
     font-weight: 700;
     font-size: 1.05em;
     padding: 1em;
-    padding-top: 45px;
+    padding-top: 30px;
   }
   footer {
-    display: flex;
-    column-gap: 100px;
+    display: grid
+;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     background-color: rgba(101, 147, 245, 20%);
-    padding-top: 30px;
-    padding-bottom: 60px;
-    justify-content: center;
+    padding-top: 2.5em;
+    padding-left: 5em;
+    padding-right: 5em;
+    padding-bottom: 3em;
   }
   footer span {
     position: absolute;
-    bottom: -1790px;
-    width: fit-content;
-    left: 650px;
+    width: 90%;
+    text-align: center;
+    bottom: -2002px;
   }
   h3 {
     font-size: 1.5em;
