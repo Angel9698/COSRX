@@ -166,16 +166,16 @@ nav li {
   }
   section ul {
     margin-top: 20px;
-    margin-top: 20px;
-    margin-left: 28%;
   }
   section ul li {
 	padding: 0.3em;
 	width: fit-content;
   }
   section ul li a {
-	text-decoration: none;
-	color: #000;
+    text-decoration: none;
+    color: #000;
+    width: 128px;
+    text-align: start;
   }
   .main-rating {
     height: 20px;
@@ -273,9 +273,8 @@ nav li {
     padding-top: 30px;
   }
   footer {
-    display: grid
-;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: grid;
+    grid-template-columns: 1fr .75fr .75fr 1fr;
     background-color: rgba(101, 147, 245, 20%);
     padding-top: 2.5em;
     padding-left: 5em;
@@ -308,35 +307,61 @@ nav li {
   footer p a {
     display: inline;
   }
+  footer section ul li {
+    margin-left: auto;
+    margin-right: auto;
+  }
   footer section:last-of-type {
-    width: 500px;
+    width: fit-content;
+    padding-left: 40px;
+  }
+  footer section + section {
+    padding: 0 15px;
   }
   footer ul a:hover {
     text-decoration: underline;
   }
   footer section:first-of-type a {
     padding: 5px;
+    padding-left: 0;
+    padding-right: 0;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: start;
   }
   footer section:first-of-type a:first-of-type {
     padding-top: 23px;
   }
   footer section:first-of-type p {
     padding-top: 1em;
-    padding-left: 4px;
+    width: 160px;
+    text-align: start;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    left: -71px;
   }
   footer section:last-of-type h3 {
     padding-bottom: 25px;
   }
-  footer input, footer button {
-    margin-top: 25px;
-    padding: 1em;
+  footer section:last-of-type p {
+    width: 351px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  footer input {
+    margin-top: 18px;
+    padding: 0.5em;
+    padding-right: 3em;
   }
   footer button {
-    margin-left: 20px;
-    margin-left: 20px;
+    margin-top: 18px;
     background-color: var(--antique-white);
     border-radius: 6%;
     border-color: var(--antique-white);
+    padding: .75em 1.5em;
+    display: block;
   }
   footer button:hover {
     background-color: var(--muddy-brown);
