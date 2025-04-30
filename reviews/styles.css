@@ -67,36 +67,36 @@ html {
   color: #ffffff;
 }
 header {
-  background-color: rgba(101, 147, 245, 20%);
-	height: 100px;
+  height: 150px;
+  background-image: linear-gradient(to bottom, rgba(101, 147, 245, 65%), azure);
 }
-header img {
+#logo {
 	height: 140px;
     margin-left: 40px;
 	position: relative;
 	top: -17px;
 }
+.logo-link {
+  position: absolute;
+  height: 100px;
+}
 nav {
-	width: 1200px;
-	margin-left: auto;
-	margin-right: auto;
-	position: absolute;
-    top: 30px;
-    left: 210px;
+  position: absolute;
+  top: 30px;
+  left: 210px;
+  display: grid;
+  grid-template-columns: 1fr .25fr;
 }
 nav a {
 	text-decoration: none;
 }
 nav ul {
-	display:grid;
-	grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;
-	flex-direction: row;
   z-index: 1;
 }
 nav li {
 	width:164px;
 	color: #1A1A1A;
-	display: block;
+	display: inline-block;
 	padding: 1rem;
 	padding-right: 0;
 	position: relative;
@@ -130,19 +130,12 @@ nav li {
 	display: block;
   }
   nav div {
-	display: flex;
-	column-gap: 35px;
-	width: 250px;
-    position: absolute;
-    right: -250px;
-	top: 16px;
+    text-align: center;
   }
   header div img {
-	position: absolute;
-    right: 69px;
     height: 25px;
-    top: -6px;
-  }div img:last-child {
+  }
+  div img:last-child {
 	right: 0;
   }
   div a {
@@ -231,9 +224,9 @@ nav li {
     left: -121px;
   }
   .testimonials div img.product-image {
-    height: 170px;
-    float: inline-start;
-    left: -30px;
+    visibility: hidden;
+    position: absolute;
+    height: 0;
   }
   .product-image:first-of-type {
     top: 5px;
@@ -273,19 +266,21 @@ nav li {
     padding-top: 30px;
   }
   footer {
-    display: grid;
-    grid-template-columns: 1fr .75fr .75fr 1fr;
     background-color: rgba(101, 147, 245, 20%);
     padding-top: 2.5em;
     padding-left: 5em;
     padding-right: 5em;
-    padding-bottom: 3em;
+    padding-bottom: .6em;
+  }
+  footer div {
+    display: grid;
+    grid-template-columns: 1fr .55fr .55fr 1fr;
   }
   footer span {
-    position: absolute;
-    width: 90%;
+    display: block;
+    margin-top: 25px;
+    width: 100%;
     text-align: center;
-    bottom: -2002px;
   }
   h3 {
     font-size: 1.5em;
@@ -315,7 +310,7 @@ nav li {
     width: fit-content;
     padding-left: 40px;
   }
-  footer section + section {
+  .help {
     padding: 0 15px;
   }
   footer ul a:hover {
@@ -367,4 +362,37 @@ nav li {
     background-color: var(--muddy-brown);
     border-color: var(--muddy-brown);
   }
+@media screen and (max-width: 1240px) {
+main {
+  width: fit-content;
+}
+.date {
+  font-size: 0.85em;
+  color: rgba(96, 96, 120, 85%);
+  padding: 0;
+  display: block;
+  width: 100%;
+  position: relative;
+  text-align: end;
+  bottom: 60px;
+}
+.product {
+  color: rgba(96, 96, 120, 85%);
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  top: 0;
+  display: block;
+  width: fit-content;
+}
+.title {
+  display: block;
+  font-weight: 700;
+  font-size: 1.05em;
+  padding: .5em;
+  padding-top: 0;
+  width: fit-content;
+}
+}
 
