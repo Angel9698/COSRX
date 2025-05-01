@@ -83,9 +83,10 @@ header {
 nav {
   position: absolute;
   top: 30px;
-  left: 210px;
+  left: 350px;
   display: grid;
-  grid-template-columns: 1fr .25fr;
+  grid-template-columns: 1fr .2fr;
+  column-gap: 30px;
 }
 nav a {
 	text-decoration: none;
@@ -129,14 +130,17 @@ nav li {
 	opacity: 1;
 	display: block;
   }
-  nav div {
-    text-align: center;
-  }
   header div img {
     height: 25px;
   }
   div img:last-child {
-	right: 0;
+    position: relative;
+    top: 7px;
+    left: 6px;
+  }
+  header div a:first-of-type {
+    position: relative;
+    right: 15px;
   }
   div a {
 	color: #000;
@@ -168,7 +172,6 @@ nav li {
     text-decoration: none;
     color: #000;
     width: 128px;
-    text-align: start;
   }
   .main-rating {
     height: 20px;
@@ -202,6 +205,7 @@ nav li {
     font-weight: 600;
     font-size: 1.1em;
     padding: 1em;
+    padding-left: 0;
     display: inline-flex;
     width: 100px;
   }
@@ -263,10 +267,11 @@ nav li {
     font-weight: 700;
     font-size: 1.05em;
     padding: 1em;
+    padding-left: 0;
     padding-top: 30px;
   }
   footer {
-    background-color: rgba(101, 147, 245, 20%);
+    background-color: rgba(101, 147, 245, 40%);
     padding-top: 2.5em;
     padding-left: 5em;
     padding-right: 5em;
@@ -274,20 +279,22 @@ nav li {
   }
   footer div {
     display: grid;
-    grid-template-columns: 1fr .55fr .55fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
   footer span {
     display: block;
     margin-top: 25px;
+    margin-bottom: 5px;
     width: 100%;
     text-align: center;
   }
   h3 {
     font-size: 1.5em;
-    font-weight: 500;
+    font-weight: 600;
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 25px;
   }
   footer a {
     display: grid;
@@ -306,49 +313,38 @@ nav li {
     margin-left: auto;
     margin-right: auto;
   }
-  footer section:last-of-type {
-    width: fit-content;
-    padding-left: 40px;
-  }
   .help {
     padding: 0 15px;
   }
   footer ul a:hover {
     text-decoration: underline;
   }
+  footer section {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
   footer section:first-of-type a {
     padding: 5px;
     padding-left: 0;
     padding-right: 0;
-    width: 300px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: start;
   }
   footer section:first-of-type a:first-of-type {
     padding-top: 23px;
   }
   footer section:first-of-type p {
     padding-top: 1em;
-    width: 160px;
-    text-align: start;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    left: -71px;
   }
   footer section:last-of-type h3 {
     padding-bottom: 25px;
   }
   footer section:last-of-type p {
-    width: 351px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 251px;
   }
   footer input {
     margin-top: 18px;
     padding: 0.5em;
-    padding-right: 3em;
+    padding-right: 0;
   }
   footer button {
     margin-top: 18px;
@@ -362,7 +358,7 @@ nav li {
     background-color: var(--muddy-brown);
     border-color: var(--muddy-brown);
   }
-@media screen and (max-width: 1240px) {
+@media screen and (max-width: 1160px) {
 main {
   width: fit-content;
 }
@@ -378,13 +374,8 @@ main {
 }
 .product {
   color: rgba(96, 96, 120, 85%);
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
   left: 0;
   top: 0;
-  display: block;
-  width: fit-content;
 }
 .title {
   display: block;
@@ -392,7 +383,34 @@ main {
   font-size: 1.05em;
   padding: .5em;
   padding-top: 0;
+  padding-left: 0;
   width: fit-content;
+}
+.testimonials div img {
+  height: 20px;
+  position: relative;
+  top: 2px;
+  left: -56px;
+}
+.testimonials div {
+  padding: 20px 30px;
+  border-bottom: 1px solid;
+}
+#logo {
+  position: relative;
+  top: 0;
+}
+.logo-link {
+  width: 100%;
+  text-align: center;
+}
+nav {
+  display: inline;
+  column-gap: 0;
+  position: unset;
+}
+nav ul {
+  visibility: hidden;
 }
 }
 
