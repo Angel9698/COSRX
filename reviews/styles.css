@@ -145,6 +145,9 @@ nav li {
   div a {
 	color: #000;
   }
+  .menuLink {
+    visibility: hidden;
+  }
   main{
 	width: 950px;
 	margin-left: auto;
@@ -160,6 +163,9 @@ nav li {
     margin-left: auto;
     margin-right: auto;
     margin-top: 35px;
+  }
+  .testimonials h2 {
+    visibility: hidden;
   }
   section ul {
     margin-top: 20px;
@@ -214,7 +220,7 @@ nav li {
     position: relative;
     left: -80px;
     display: inline-flex;
-    width: 450px;
+    width: 500px;
   }
   .date {
     font-size: 0.85em;
@@ -228,38 +234,9 @@ nav li {
     left: -121px;
   }
   .testimonials div img.product-image {
-    visibility: hidden;
-    position: absolute;
-    height: 0;
-  }
-  .product-image:first-of-type {
-    top: 5px;
-  }
-  #image2 {
-    top: 5px;
-  }
-  #image3 {
-    top: 5px;
-  }
-  #image4 {
-    top: 5px;
-  }
-  #image5 {
-    top: 5px;
-  }
-  #image6 {
-    top: 5px;
-  }
-  #image7 {
-    top: 5px;
-  }
-  #image8 {
-    top: 5px;
-  }
-  #image9 {
-    top: 5px;
-  }
-  #image10 {
+    float: inline-start;
+    height: 150px;
+    left: -50px;
     top: 5px;
   }
   .title {
@@ -273,7 +250,7 @@ nav li {
   footer {
     background-color: rgba(101, 147, 245, 40%);
     padding-top: 2.5em;
-    padding-left: 5em;
+    padding-left: 2em;
     padding-right: 5em;
     padding-bottom: .6em;
   }
@@ -376,6 +353,7 @@ main {
   color: rgba(96, 96, 120, 85%);
   left: 0;
   top: 0;
+  width: fit-content;
 }
 .title {
   display: block;
@@ -388,29 +366,46 @@ main {
 }
 .testimonials div img {
   height: 20px;
-  position: relative;
   top: 2px;
-  left: -56px;
+  left: -33px;
 }
 .testimonials div {
   padding: 20px 30px;
   border-bottom: 1px solid;
 }
-#logo {
-  position: relative;
-  top: 0;
-}
-.logo-link {
-  width: 100%;
-  text-align: center;
-}
 nav {
-  display: inline;
   column-gap: 0;
+  grid-template-columns: 1fr 1fr;
   position: unset;
+  height: 100px;
+}
+nav div {
+  text-align: center;
+  margin-top: 32px;
 }
 nav ul {
   visibility: hidden;
+}
+.menuLink {
+  visibility: visible;
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: var(--muddy-brown);
+  color: var(--black);
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-left: 10px;
+  position: absolute;
+  z-index: 1;
+}
+.menuLink:hover {
+  background-color: var(--dark-gray);
+}
+.testimonials div img.product-image {
+  visibility: hidden;
+  position: absolute;
+  height: 0;
 }
 }
 

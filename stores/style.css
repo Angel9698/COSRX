@@ -1,0 +1,33 @@
+html {
+    background-color:azure;
+    font-family: inter, montserrat, sans-serif;
+}
+body {
+    font-size: .6em;
+}
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 2em;
+}
+li {
+    list-style-type: none;
+}
+ul {
+    margin: 0 0 15px 0;
+    padding-left: 15px;
+}
+.head1, .head2, .head3, .head4, .head5 {
+    font-weight: 600;
+}
+button {
+    padding: 1em;
+    background-color: #b48f5b;
+    border-color: #b48f5b;
+}
+.back {
+    width: 93%;
+    text-align: end;
+    position: absolute;
+    margin-top: 23px;
+}

@@ -47,6 +47,7 @@ table {
   --azure: azure;
   --antique-white: #faebd7;
   --blanched-almond: #ffebcd;
+  --dark-gray: #a9a9a9;
 
 	--fonts: Inter, Monsterrat, sans-serif;
 }
@@ -58,86 +59,94 @@ html {
   left: 50%;
   transform: translateY(-100px);
 }
-  #skip:focus {
-    transform: translateY(50px);
-    transition: 0.3s;
-    padding: 20px;
-    background-color: #f33;
-    color: #ffffff;
+#skip:focus {
+  transform: translateY(50px);
+  transition: 0.3s;
+  padding: 20px;
+  background-color: #f33;
+  color: #ffffff;
 }
 header {
   height: 150px;
   background-image: linear-gradient(to bottom, rgba(101, 147, 245, 65%), azure);
 }
-header img {
-    height: 140px;
+#logo {
+	height: 140px;
     margin-left: 40px;
-    position: relative;
-    top: -17px;
+	position: relative;
+	top: -17px;
 }
-  nav {
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    position: absolute;
-    top: 30px;
-    left: 210px;
+.logo-link {
+  position: absolute;
+  height: 100px;
 }
-  nav a {
-    text-decoration: none;
+nav {
+  position: absolute;
+  top: 30px;
+  left: 350px;
+  display: grid;
+  grid-template-columns: 1fr .2fr;
+  column-gap: 30px;
 }
-  nav ul {
-    display:grid;
-    grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;
-    flex-direction: row;
+nav a {
+	text-decoration: none;
 }
-  nav li {
-    width:164px;
-    color: #1A1A1A;
-    display: inline-block;
-    padding: 1rem;
-    padding-right: 0;
-    position: relative;
-    text-decoration: none;
-    transition-duration: 0.5s;
+nav ul {
+  z-index: 1;
+}
+nav li {
+	width:164px;
+	color: #1A1A1A;
+	display: inline-block;
+	padding: 1rem;
+	padding-right: 0;
+	position: relative;
+	text-decoration: none;
+	transition-duration: 0.5s;
   }
   nav li a {
-	  color: #1A1A1A;
+	color: #1A1A1A;
   }
   nav li:hover, nav li:focus-within {
-    background-color: var(--muddy-brown);
-    cursor: pointer;
+	background-color: var(--muddy-brown);
+	cursor: pointer;
   }
   nav li:focus-within a {
-	  outline: none;
+	outline: none;
   }
   nav ul li ul {
-    background-color: var(--antique-white);
-    visibility: hidden;
-    opacity: 0;
-    width: 180px;
-    position: absolute;
-    margin-top: 1rem;
-    left: 0;
-    display: none;
-    transition: all 0.5s ease-in;
+	background-color: var(--antique-white);
+	visibility: hidden;
+	opacity: 0;
+	width: 180px;
+	position: absolute;
+	margin-top: 1rem;
+	left: 0;
+	display: none;
+	transition: all 0.5s ease-in;
   }
   ul li:hover > ul, ul li:focus-within > ul, ul li ul:hover, ul li ul:focus {
-    visibility: visible;
-    opacity: 1;
-    display: block;
-  }
-  nav div {
-    text-align: center;
+	visibility: visible;
+	opacity: 1;
+	display: block;
   }
   header div img {
     height: 25px;
   }
   div img:last-child {
-	  right: 0;
+    position: relative;
+    top: 7px;
+    left: 6px;
+  }
+  header div a:first-of-type {
+    position: relative;
+    right: 15px;
   }
   div a {
-	  color: #000;
+	color: #000;
+  }
+  .menuLink {
+    visibility: hidden;
   }
   main{
     width: 950px;
@@ -156,6 +165,9 @@ header img {
     margin-top: 50px;
     margin-bottom: 50px;
   }
+  .warning h2 {
+    visibility: hidden;
+  }
   section ul {
     list-style: circle;
     margin-top: 20px;
@@ -169,6 +181,7 @@ header img {
   section ul li a {
     text-decoration: none;
     color: #000;
+    width: 128px;
   }
   .shortcut li:hover {
 	  font-weight: bolder;
@@ -208,42 +221,15 @@ header img {
   }
   td {
     text-align: center;
-    padding: 1.5em;
+    padding: 1em 0;
     border: 1px solid #000;
   }
-  h2 {
+  h3 {
     font-size: 1.7em;
     font-weight: 400;
-    position: absolute;
-    top: 850px;
-    left: 250px;
+    padding-top: 10px;
   }
-  #america {
-    left: 298px;
-  }
-  #international {
-    top: 755px;
-  }
-  #europe {
-    top: 1641px;
-    left: 310px;
-  }
-  #asia {
-    top: 3691px;
-    left: 345px;
-  }
-  #africa {
-    top: 5821px;
-    left: 323px;
-  }
-  #oceania {
-    top: 6418px;
-    left: 292px;
-  }
-  #cis {
-    top: 6500px;
-    left: 349px;
-  }
+
   .beige {
     background-color: beige;
   }
@@ -251,25 +237,30 @@ header img {
     background-color: bisque;
   }
   footer {
-    display: flex;
-    column-gap: 100px;
-    background-color: rgba(101, 147, 245, 20%);
-    padding-top: 30px;
-    padding-bottom: 60px;
-    justify-content: center;
+    background-color: rgba(101, 147, 245, 40%);
+    padding-top: 2.5em;
+    padding-left: 2em;
+    padding-right: 5em;
+    padding-bottom: .6em;
+  }
+  footer div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
   footer span {
-    position: absolute;
-    bottom: -6110px;
-    width: fit-content;
-    left: 650px;
+    display: block;
+    margin-top: 25px;
+    margin-bottom: 5px;
+    width: 100%;
+    text-align: center;
   }
   h3 {
     font-size: 1.5em;
-    font-weight: 500;
+    font-weight: 600;
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 25px;
   }
   footer a {
     display: grid;
@@ -284,38 +275,136 @@ header img {
   footer p a {
     display: inline;
   }
-  footer section:last-of-type {
-    width: 500px;
+  footer section ul li {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .help {
+    padding: 0 15px;
   }
   footer ul a:hover {
     text-decoration: underline;
   }
+  footer section {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
   footer section:first-of-type a {
     padding: 5px;
+    padding-left: 0;
+    padding-right: 0;
   }
   footer section:first-of-type a:first-of-type {
     padding-top: 23px;
   }
   footer section:first-of-type p {
     padding-top: 1em;
-    padding-left: 4px;
   }
   footer section:last-of-type h3 {
     padding-bottom: 25px;
   }
-  footer input, footer button {
-    margin-top: 25px;
-    padding: 1em;
+  footer section:last-of-type p {
+    width: 251px;
+  }
+  footer input {
+    margin-top: 18px;
+    padding: 0.5em;
+    padding-right: 0;
   }
   footer button {
-    margin-left: 20px;
-    margin-left: 20px;
+    margin-top: 18px;
     background-color: var(--antique-white);
     border-radius: 6%;
     border-color: var(--antique-white);
+    padding: .75em 1.5em;
+    display: block;
   }
   footer button:hover {
     background-color: var(--muddy-brown);
     border-color: var(--muddy-brown);
   }
-
+@media screen and (max-width: 1160px) {
+main {
+  width: fit-content;
+}
+body section:first-of-type, .warning {
+  padding: 15px;
+}
+.date {
+  font-size: 0.85em;
+  color: rgba(96, 96, 120, 85%);
+  padding: 0;
+  display: block;
+  width: 100%;
+  position: relative;
+  text-align: end;
+  bottom: 60px;
+}
+.product {
+  color: rgba(96, 96, 120, 85%);
+  left: 0;
+  top: 0;
+}
+.title {
+  display: block;
+  font-weight: 700;
+  font-size: 1.05em;
+  padding: .5em;
+  padding-top: 0;
+  padding-left: 0;
+  width: fit-content;
+}
+.testimonials div img {
+  height: 20px;
+  top: 2px;
+  left: -33px;
+}
+.testimonials div {
+  padding: 20px 30px;
+  border-bottom: 1px solid;
+}
+nav {
+  column-gap: 0;
+  grid-template-columns: 1fr 1fr;
+  position: unset;
+  height: 100px;
+}
+nav div {
+  text-align: center;
+  margin-top: 32px;
+}
+nav ul {
+  visibility: hidden;
+}
+.menuLink {
+  visibility: visible;
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: var(--muddy-brown);
+  color: var(--black);
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-left: 10px;
+  position: absolute;
+  z-index: 1;
+}
+.menuLink:hover {
+  background-color: var(--dark-gray);
+}
+.testimonials div img.product-image {
+  visibility: hidden;
+  position: absolute;
+  height: 0;
+}
+th {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+h3 {
+  font-size: 1em;
+  font-weight: 600;
+  padding-top: 10px;
+}
+}
