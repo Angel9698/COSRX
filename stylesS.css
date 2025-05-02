@@ -324,54 +324,12 @@ nav li {
     background-color: var(--muddy-brown);
     border-color: var(--muddy-brown);
   }
-  .top {
-    padding: 1em;
-    background-color: var(--muddy-brown);
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    text-decoration: none;
-    color: black;
-  }
 @media screen and (max-width: 1160px) {
 main {
   width: fit-content;
 }
 body section:first-of-type, .warning {
   padding: 15px;
-}
-.date {
-  font-size: 0.85em;
-  color: rgba(96, 96, 120, 85%);
-  padding: 0;
-  display: block;
-  width: 100%;
-  position: relative;
-  text-align: end;
-  bottom: 60px;
-}
-.product {
-  color: rgba(96, 96, 120, 85%);
-  left: 0;
-  top: 0;
-}
-.title {
-  display: block;
-  font-weight: 700;
-  font-size: 1.05em;
-  padding: .5em;
-  padding-top: 0;
-  padding-left: 0;
-  width: fit-content;
-}
-.testimonials div img {
-  height: 20px;
-  top: 2px;
-  left: -33px;
-}
-.testimonials div {
-  padding: 20px 30px;
-  border-bottom: 1px solid;
 }
 nav {
   column-gap: 0;
@@ -385,6 +343,15 @@ nav div {
 }
 nav ul {
   visibility: hidden;
+}
+.top {
+  padding: 1em;
+  background-color: var(--muddy-brown);
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  text-decoration: none;
+  color: black;
 }
 .menuLink {
   visibility: visible;
